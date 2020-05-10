@@ -1,0 +1,6 @@
+@import 'https://cdn.plyr.io/3.6.2/plyr.css';
+
+.player__wrapper {
+    padding: 10px;
+    width: calc(25% - 20px);
+}
