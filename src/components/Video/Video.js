@@ -10,15 +10,14 @@ class Video extends React.Component {
     }
 
     render () {
-        const {videoId, videoType, title, description} = this.props;
-        //   const videoImg = `http://i3.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
+      const {videoId, videoType, title, description} = this.props;
 
       return (
         <div className="player__wrapper">
-        <div className="js-player" data-plyr-provider={videoType} data-plyr-embed-id={videoId}></div>
-        <h2>{title}</h2>
-        <p>{description}</p>
-      </div>
+          <div className="js-player" data-plyr-provider={videoType} data-plyr-embed-id={videoId}></div>
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </div>
       )
     }
   }

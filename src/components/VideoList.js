@@ -6,8 +6,8 @@ import Video from './Video/Video';
 
 class VideoList extends React.Component {
 
-    constructor() {
-      super();
+    constructor(props) {
+      super(props);
       this.state = {videos:[]};
     }
 
@@ -25,7 +25,7 @@ class VideoList extends React.Component {
         <>
         {this.state.videos.map((videos, index) => 
           <Video
-            key={index}
+            key={`video-${index}`}
             videoId={parseVideo(videos.video_url)['id']}
             videoType={parseVideo(videos.video_url)['type']}
             title={videos.title}
